@@ -1,4 +1,4 @@
-# CC
+# Message
 
 Because I do not use ECMAScript 2016 yet, You can find 2 files for task 2. <br>
 CCFrontTask2.js  is written just as a basic "function damage() { return damagePoints } <br>
