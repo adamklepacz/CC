@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interview task number 1 - Clearcode</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Adam Klepacz">
+
+    <!-- CSS styles -->
+    <style>
+      .tip-wrapper {
+        width: 200px;
+        margin: 100px auto;
+        border: 1px solid #A9B0B3;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      p {
+        position: relative;
+        text-align: center;
+      }
+
+      a, a:visited, a:focus {
+        text-decoration: none;
+        color: #000;
+      }
+
+      a:first-child {
+        border-bottom: 2px dotted #ff6600;
+      }
+
+      a span.tip {
+        display: none;
+        position: absolute;
+        top: -45px;
+        left: 55px;
+        width: 200px;
+        padding: 10px;
+        z-index: 999;
+        background: #ff6600;
+        color: #fff;
+        text-align: left;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      a span.tip:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 100px;
+        top: 38px;
+
+        border-top: 8px solid #ff6600;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+      }
+
+      a:hover span.tip {
+        display: block;
+      }
+
+      a:hover {
+        cursor: help;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="tip-wrapper">
+      <p>
+        This is an awesome
+        <a href="#">
+          <span>tooltip.</span>
+          <span class="tip">
+            It's so cool!
+          </span>
+        </a>
+      </p><!-- /p end -->
+    </div><!-- /.tip-wrapper -->
+  </body>
+</html>
